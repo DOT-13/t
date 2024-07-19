@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인터넷의 영향과 유용성</title>
     <link rel="stylesheet" href="/examples/media/h.css">
-
+    <div class="background">
+        <div class="backdrop"></div>
+    </div>
     <style>
         body {
             margin: 0; /* 페이지 margin 초기화 */
@@ -20,16 +22,25 @@
         }
 
         main {
-            position: relative; /* main 요소 position 설정 */
-            width: 120%;
-            height: 100vh; /* 화면 전체 높이 설정 */
-            background-image: url('https://i.redd.it/d5a6i9q4roj91.png');
+            .background
+
+        {
+            background-image: url(./backup/850/img/face.jpg);
             background-size: cover;
+            width: 600px;
+            height: 600px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            color: white;
+            justify-content: center;
+        }
+
+        .backdrop {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0,0,128,0.1);
+            border-radius: 30px;
+        }
+
         }
 
         section {
